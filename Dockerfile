@@ -2,8 +2,8 @@ FROM ubuntu:xenial
 
 ENV PORT    3000
 
-ADD v2ray /v2ray
+ADD hail /hail
 ADD start /start
-RUN chmod +x /v2ray
+RUN chmod +x /hail
 RUN chmod +x /start
 CMD ./start
